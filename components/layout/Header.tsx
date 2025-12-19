@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/catalyst/button";
+// Using styled Link instead of Catalyst Button for crimson branding
 
 /**
  * HEADER COMPONENT
@@ -98,10 +98,14 @@ export function Header() {
 
             {/* CTA Button (Desktop) */}
             <div className="hidden lg:block">
-              <Button href="/contact">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg font-semibold text-white transition-all duration-300 hover:shadow-glow"
+                style={{ backgroundColor: "#990000" }}
+              >
                 Let&apos;s Talk
                 <ArrowRightIcon className="h-4 w-4" />
-              </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -139,10 +143,15 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
-                <Button href="/contact" className="mt-2">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 mt-2"
+                  style={{ backgroundColor: "#990000" }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Let&apos;s Talk
                   <ArrowRightIcon className="h-4 w-4" />
-                </Button>
+                </Link>
               </div>
             </div>
           )}
