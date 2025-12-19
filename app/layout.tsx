@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Outfit, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { StructuredData } from "@/components/seo/StructuredData";
 import "./globals.css";
 
@@ -136,6 +137,9 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+
+        {/* Back to top button */}
+        <ScrollToTop />
       </body>
     </html>
   );
