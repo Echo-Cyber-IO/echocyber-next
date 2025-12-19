@@ -11,6 +11,9 @@ import { HeroCircuit } from "@/components/ui/icons";
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center">
+      {/* Top-left red flare - matches original site */}
+      <div className="fixed top-0 left-0 w-[450px] h-[450px] bg-gradient-to-br from-crimson-900/40 to-transparent transform -skew-x-12 blur-2xl pointer-events-none z-0" />
+
       {/* Bottom-right gradient accent */}
       <div className="absolute bottom-0 -right-20 w-80 h-80 bg-gradient-to-tl from-crimson-800/20 to-transparent transform skew-x-12 blur-2xl" />
 
