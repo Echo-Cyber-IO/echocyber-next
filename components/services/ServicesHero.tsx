@@ -7,8 +7,10 @@
 export function ServicesHero() {
   return (
     <section className="relative py-24 lg:py-32">
-      {/* Subtle gradient accent */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-crimson-900/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Top-right red flare */}
+      <div className="absolute -top-12 -right-12 w-96 h-96 bg-gradient-to-bl from-crimson-900/40 to-transparent rotate-45 blur-3xl pointer-events-none" />
+      {/* Left accent */}
+      <div className="absolute top-1/2 -left-8 w-48 h-80 bg-gradient-to-r from-crimson-800/15 to-transparent blur-3xl pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-3xl">

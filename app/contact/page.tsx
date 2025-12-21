@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="relative py-24 lg:py-32">
-      {/* Subtle gradient accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-crimson-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-crimson-900/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Gradient accents */}
+      <div className="absolute -top-4 -right-4 w-96 h-96 bg-gradient-to-bl from-crimson-900/30 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 -left-4 w-80 h-64 bg-gradient-to-tr from-crimson-800/20 to-transparent blur-3xl pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">

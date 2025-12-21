@@ -10,8 +10,10 @@ import Image from "next/image";
 export function AboutHero() {
   return (
     <section className="relative py-24 lg:py-32">
-      {/* Subtle gradient accent */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-crimson-900/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Top-left red flare - similar to home but positioned differently */}
+      <div className="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-crimson-900/30 to-transparent -rotate-12 blur-3xl pointer-events-none" />
+      {/* Bottom-right accent */}
+      <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-crimson-800/20 to-transparent blur-3xl pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
