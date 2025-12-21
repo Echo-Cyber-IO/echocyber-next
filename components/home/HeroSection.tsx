@@ -51,8 +51,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 group"
-              style={{ backgroundColor: '#990000' }}
+              className="inline-flex items-center justify-center gap-2 bg-crimson-700 hover:bg-crimson-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 group"
             >
               <span>Let&apos;s Talk</span>
               <svg

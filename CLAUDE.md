@@ -97,11 +97,6 @@ public/img/                 # Static images
 ## Design Conventions
 
 ### Colors (defined in globals.css @theme block)
-**IMPORTANT**: Custom Tailwind colors (`bg-crimson-700`, etc.) are NOT compiling correctly. Use inline styles for crimson backgrounds:
-```tsx
-// Instead of: className="bg-crimson-700"
-// Use: style={{ backgroundColor: "#990000" }}
-```
 
 | Color | Hex | Usage |
 |-------|-----|-------|
@@ -159,8 +154,7 @@ export default function AboutPage() {
 - Dynamic sitemap.ts and robots.ts
 
 ### Known Issues
-1. **Tailwind custom colors not compiling** - Use inline `style={{ backgroundColor: "#990000" }}` for crimson backgrounds
-2. **Catalyst Button** - Doesn't support crimson color, use styled Links instead
+1. **Catalyst Button** - Doesn't support crimson color, use styled Links with `bg-crimson-700` instead
 
 ## Deployment
 

@@ -30,10 +30,9 @@ export function ScrollToTop() {
       <button
         onClick={scrollToTop}
         className={`
-          p-3 rounded-full text-white shadow-glow transition-all duration-300 hover:shadow-glow-lg
+          bg-crimson-700 hover:bg-crimson-600 p-3 rounded-full text-white shadow-glow transition-all duration-300 hover:shadow-glow-lg
           ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}
         `}
-        style={{ backgroundColor: "#990000" }}
         aria-label="Back to top"
       >
         <svg

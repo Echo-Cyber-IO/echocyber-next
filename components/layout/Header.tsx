@@ -100,8 +100,7 @@ export function Header() {
             <div className="hidden lg:block">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg font-semibold text-white transition-all duration-300 hover:shadow-glow"
-                style={{ backgroundColor: "#990000" }}
+                className="inline-flex items-center justify-center gap-2 bg-crimson-700 hover:bg-crimson-600 px-6 py-2.5 rounded-lg font-semibold text-white transition-all duration-300 hover:shadow-glow"
               >
                 Let&apos;s Talk
                 <ArrowRightIcon className="h-4 w-4" />
@@ -145,8 +144,7 @@ export function Header() {
                 ))}
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 mt-2"
-                  style={{ backgroundColor: "#990000" }}
+                  className="inline-flex items-center justify-center gap-2 bg-crimson-700 hover:bg-crimson-600 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 mt-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Let&apos;s Talk
