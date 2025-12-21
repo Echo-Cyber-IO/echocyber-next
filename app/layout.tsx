@@ -129,7 +129,7 @@ export default function RootLayout({
         `}
       >
         {/* Hex grid background - fixed behind everything */}
-        <div className="fixed inset-0 bg-hex-grid opacity-20 pointer-events-none" />
+        <div className="fixed inset-0 bg-hex-grid opacity-30 pointer-events-none" />
 
         {/* Page structure */}
         <div className="relative flex min-h-screen flex-col">
